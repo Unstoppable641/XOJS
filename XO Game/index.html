@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Авторизация XO GAME</title>
+	<script src="main.js"></script>
+	<link rel="stylesheet" href="css/style.css" media="screen" type="text/css" />
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+
+    <div id="login-form"> 
+      <h1>АВТОРИЗАЦИЯ</h1>
+        <fieldset>
+            <form action="javascript:void(0);" method="get">
+                <input type="email" required value="Логин" onBlur="if(this.value=='')this.value='Логин'" onFocus="if(this.value=='Логин')this.value='' "> 
+                <input type="password" required value="Пароль" onBlur="if(this.value=='')this.value='Пароль'" onFocus="if(this.value=='Пароль')this.value='' "> 
+                <input type="submit" value="ВОЙТИ">
+				<input type="button" class="btn" id="modal_open" value="Регистрация">
+            </form>
+        </fieldset>
+    </div> 
+	
+	<a href="#openModal">Открыть модальное окно</a>
+	<div id="openModal" class="modalDialog">     
+	 <div>
+       <a href="#close" title="Закрыть" class="close">X</a>
+       <h2>Модальное окно</h2>
+	    </div>
+	</div> 
+	
+</body>
+</html>
